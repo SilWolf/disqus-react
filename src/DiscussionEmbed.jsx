@@ -60,6 +60,7 @@ export class DiscussionEmbed extends React.Component {
             this.page.identifier = config.identifier;
             this.page.url = config.url;
             this.page.title = config.title;
+            this.language = config.language;
             this.callbacks.onNewComment = [
                 config.onNewComment,
             ];
@@ -79,6 +80,7 @@ DiscussionEmbed.propTypes = {
         identifier: PropTypes.string,
         url: PropTypes.string,
         title: PropTypes.string,
+        language: PropTypes.string,
         onNewComment: PropTypes.func,
-    }).isRequired,
+    }).isRequired
 };
